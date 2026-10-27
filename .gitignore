@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+.venv/
+.venv-*/
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+
+# Runtime output
+logs/
+*.log
+.patch-backups/
+_to_delete/
+
+# WhatsApp bridge
+whatsapp-bridge/node_modules/
+whatsapp-bridge/auth/
+whatsapp-bridge/.env
+
+# Editors
+.idea/
+.vscode/
+
+# One-off diagnostics must never be committed (they talk to production 1C)
+debug_*.py
+fix_*.py
+
+# Database / local backups
+db-backups/
+*.dump
+*.backup
+*.bak
+.env.pre-*
+
+# WhatsApp runtime/session state
+whatsapp-bridge/state/
+
+# Local patch/install bundles and archives
+one-c-*-v*/
+whatsapp-*-v*/
+*.rar
+*.7z
+
+# OS noise
+Thumbs.db
+.DS_Store
